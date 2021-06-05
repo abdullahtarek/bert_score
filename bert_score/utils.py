@@ -28,11 +28,12 @@ SCIBERT_URL_DICT = {
 
 lang2model = defaultdict(lambda: "bert-base-multilingual-cased")
 lang2model.update(
-    {"en": "roberta-large", "zh": "bert-base-chinese", "en-sci": "scibert-scivocab-uncased",}
+    {"en": "roberta-large", "zh": "bert-base-chinese", "en-sci": "scibert-scivocab-uncased","ar-arabert":"aubmindlab/bert-base-arabertv2"}
 )
 
 
 model2layers = {
+    "aubmindlab/bert-base-arabertv2":9,
     "bert-base-uncased": 9,  # 0.6925188074454226
     "bert-large-uncased": 18,  # 0.7210358126642836
     "bert-base-cased-finetuned-mrpc": 9,  # 0.6721947475618048
